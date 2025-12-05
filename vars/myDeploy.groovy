@@ -1,8 +1,6 @@
 def call(String serviceName) {
-    echo "===== DEPLOY STAGE (from shared library) ====="
-    echo "Deploying service: ${serviceName}"
+    echo "===== DEPLOY STAGE ====="
+    echo "Deploying: ${serviceName}"
 
-    sh """
-        echo "Simulating deployment for ${serviceName}..."
-    """
+    sh "echo Simulating deployment for ${serviceName}"
 }
